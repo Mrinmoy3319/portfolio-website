@@ -1,0 +1,119 @@
+body{
+    background-color: #000;
+}
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+.hero{
+    position: relative;
+    width: 80%;
+    height: 100vh;
+    background-color: #efef4e;
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.logo{
+    height: 50%;
+    width:500px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:10px;
+    font-size: large;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #e3dede;
+}
+nav ul li a:hover{
+    color:rgb(11, 157, 157);
+}
+.class{
+    margin-left:10%;
+    margin-top: 18%;
+}
+.class h1{
+    font-size: 50px;
+    color: #e3dede;
+    margin-bottom: 18px;
+}
+span{
+    color: orange;
+}
+.class p{
+    color: #e3dede;
+    margin: 0.5px;
+    padding: 0.5px;
+    font-size: large;
+}
+.class button{
+    position: relative;
+    margin-left: 20px;
+    padding-top: 5px;
+    border-radius: 5px;
+    size: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.cv{
+    text-decoration: none;
+    color: black;
+}
+.class button:hover{
+    background-color: aliceblue;
+    border-radius: 8px;
+    text-transform: capitalize;
+}
+.img{
+    width: 45%;
+    height: 70%;
+    position: absolute;
+    bottom:0;
+    right: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.img image{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 1s;
+    width: 50px;
+}
+.foot{
+    display: flex;
+    font-size: large;
+    align-items: center;
+    margin: 10px;
+    font-weight: bold;
+
+}
+.foot ul li{
+    display: inline-block;
+    list-style:circle;
+}
+.foot ul li a{
+    text-decoration: none;
+    color: #e3dede;
+}
+.foot{
+    margin-top: 190px;
+    margin-inline: 10px;
+    margin-left: 60px;
+    justify-content: double space-between;
+}
+.foot ul li a:hover{
+    color:rgb(11, 157, 157);
+}
