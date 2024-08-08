@@ -21,7 +21,8 @@ nav{
     margin: auto;
 }
 .logo{
-    height: 50%;
+    margin-left: 60px;
+    height: 120%;
     width:500px;
 }
 nav ul li{
@@ -46,6 +47,7 @@ nav ul li a:hover{
     font-size: 50px;
     color: #e3dede;
     margin-bottom: 18px;
+    animation-delay: 0.5s;
 }
 span{
     color: orange;
@@ -55,6 +57,7 @@ span{
     margin: 0.5px;
     padding: 0.5px;
     font-size: large;
+    animation-delay: 1s;
 }
 .class button{
     position: relative;
@@ -64,13 +67,14 @@ span{
     size: 20px;
     font-weight: bold;
     font-size: 20px;
+    animation-delay: 1.5s;
 }
 .cv{
     text-decoration: none;
     color: black;
 }
 .class button:hover{
-    background-color: aliceblue;
+    background-color: rgb(16, 119, 209);
     border-radius: 8px;
     text-transform: capitalize;
 }
@@ -82,8 +86,9 @@ span{
     right: 30px;
     justify-content: center;
     align-items: center;
+    animation-delay: 2.0s;
 }
-.img image{
+.image:hover{
     height: 100%;
     position: absolute;
     left: 50%;
@@ -98,7 +103,7 @@ span{
     align-items: center;
     margin: 10px;
     font-weight: bold;
-
+    animation-delay: 2.5s;
 }
 .foot ul li{
     display: inline-block;
@@ -108,12 +113,36 @@ span{
     text-decoration: none;
     color: #e3dede;
 }
-.foot{
+.foot li{
     margin-top: 190px;
     margin-inline: 10px;
     margin-left: 60px;
-    justify-content: double space-between;
+    align-items:first baseline;
+    justify-content: space-between;
+
 }
 .foot ul li a:hover{
     color:rgb(11, 157, 157);
+}
+.bt:hover{
+    color: aquamarine;
+}
+.back{
+    position:absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height:100%;
+    width:100%;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(90px);
+    animation: moveup 1s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
